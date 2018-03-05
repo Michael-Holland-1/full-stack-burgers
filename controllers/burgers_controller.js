@@ -20,6 +20,7 @@ router.get("/", function(req, res) {
   });
 });
 
+//res.redirect('/index')
 router.post("/api/burgers", function(req, res) {
   console.log("inside the post")
   burger.insertOne(["burger_name"]), [
@@ -27,6 +28,7 @@ router.post("/api/burgers", function(req, res) {
   ], function(result) {
     // Send back the ID of the new quote
     res.json({ id: result.insertId });
+  //  res.redirect("/");
   }
 });
 
@@ -43,7 +45,8 @@ router.put("/api/burgers/:id", function(req, res) {
       // If no rows were changed, then the ID must not exist, so 404
       return res.status(404).end();
     } else {
-      res.status(200).end();
+      res.redirect("/");
+      //res.status(200).end();
     }
   });
 });

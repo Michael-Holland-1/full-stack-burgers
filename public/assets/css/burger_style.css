@@ -1,4 +1,4 @@
-.maint-text {
+.main-text {
   background-color: #F5B511 !important;
 }
 
@@ -10,3 +10,7 @@ body {
 /* #add-burger-box {
   width: 50%;
 } */
+
+li {
+  list-style: none;
+}
