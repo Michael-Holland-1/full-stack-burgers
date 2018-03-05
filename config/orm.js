@@ -45,7 +45,7 @@ var orm = {
     });
   },
   
-  // insert one record -- uer cannot enter devoured value - it is false by default
+  // insert one record
   insertOne: function(table, cols, vals, cb) {
     var queryString = "INSERT INTO " + table;
     
@@ -55,9 +55,16 @@ var orm = {
     queryString += "VALUES (";
     queryString += printQuestionMarks(vals.length);
     queryString += ") ";
+    
+    console.log(queryString);
+    console.log(vals);
     connection.query(queryString, vals, function(err, result) {
-      if (err) throw err;
-      console.log(result);
+      if (err) {
+        throw err;
+      }
+            console.log(result);
+      cb(result);
+
     });
   },
   
@@ -75,7 +82,7 @@ var orm = {
       if (err) {
         throw err;
       }
-      
+      console.log(result);
       cb(result);
     });
   }
