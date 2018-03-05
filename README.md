@@ -6,7 +6,7 @@ Play online at [herokulink].
 
 With this app, you can order a burger by typing its name, and click `Devour it!` when your burger is ready. After you eat it, the burger is added to the list of `Burgers that have been eaten`.
 
-On the backend, MySQL stores the data, and there is a custom object-relational model to make it easier to repeat SQL queries. Handlebars.js allows for reuse of common components on the the frontend.
+On the backend, MySQL stores the data, and there is a custom [object-relational mapping (ORM)](https://en.wikipedia.org/wiki/Object-relational_mapping) to make it easier to repeat SQL queries. Handlebars.js allows for reuse of common components on the the frontend.
 
 ![Video of user interface](/public/assets/img/front-end-video.gif)
 
@@ -27,5 +27,6 @@ In a terminal window, navigate into the folder where you downloaded this app, an
 - HTML, CSS, Bootstrap, [Handlebars.js](https://handlebarsjs.com/)
 - JavaScript
 - Node.js
+- object-relational mapping
 - [Express.js](https://expressjs.com/)
 - npm, including [express](https://www.npmjs.com/package/express) and [body-parser](https://www.npmjs.com/package/body-parser) packages.

@@ -1,6 +1,6 @@
-var orm = require("../config/orm.js");
+// pull in the ORM and use burger-specific information. The variables for cols and vals represent arrays.
 
-// Also inside burger.js, create the code that will call the ORM functions using burger specific input for the ORM.
+var orm = require("../config/orm.js");
 
 var burger = {
   selectAll: function(cb) {
@@ -8,7 +8,6 @@ var burger = {
       cb(res);
     });
   },
-  // The variables cols and vals are arrays.
   insertOne: function(cols, vals, cb) {
     orm.insertOne("burgers", cols, vals, function(res) {
       cb(res);

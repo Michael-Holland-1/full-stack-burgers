@@ -1,3 +1,5 @@
+// connection information for MySQL 
+
 var mysql = require("mysql");
 
 var connection = mysql.createConnection({
