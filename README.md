@@ -2,7 +2,7 @@
 
 This is a full-stack JavaScript app built using MySQL, Node.js, Express.js, Handlebars.js, HTML, and CSS. The architecture follows a [model-view-controller](https://en.wikipedia.org/wiki/Model%E2%80%93view%E2%80%93controller) pattern. It also demonstrates routes, body-parsing middleware, and `GET`, `PUT`, and `POST` requests to a server. 
 
-Play online at [herokulink].
+Play online at https://full-stack-burgers.herokuapp.com/.
 
 With this app, you can order a burger by typing its name, and click `Devour it!` when your burger is ready. After you eat it, the burger is added to the list of `Burgers that have been eaten`.
 
